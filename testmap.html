@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testmap.com</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"
+        integrity="sha384-OBzR0bKHtbT0sF1WSo9UOaVdb9mssANnKhIcI9R4lfc3fRli3Z1unRgNQ9jLyF4A" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"
+        integrity="sha384-Uc4IvZcld1a2tP4BEOYF4OD7ROtmjrDq5m1nqtOJqY5GOw2G3h6+VQ6Z+7tS+N5p"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="map" style="width: 600px; height: 400px;"></div>
+
+
+
+    <script>
+        // Initialiser la carte et définir ses coordonnées centrales et son niveau de zoom
+        var map = L.map('map').setView([48.8566, 2.3522], 13); // Coordonnées de Paris (48.8566, 2.3522) et niveau de zoom 13
+
+        // Ajouter une couche de carte OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19, // Niveau de zoom maximum
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' // Attribution de la carte
+        }).addTo(map);
+
+        // Ajouter un marqueur (optionnel)
+        L.marker([48.8566, 2.3522]).addTo(map)
+            .bindPopup('Paris')
+            .openPopup();
+
+    </script>
+</body>
+
+</html>
