@@ -17,6 +17,7 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -66,8 +67,8 @@
             <source src="./assets/videos/intro.mp4" type="video/mp4">
         </video>
         <div class="container">
-            <h1>Led Industrie Madagascar</h1>
-            <h2>Éclairons votre monde avec l'innovation LED</h2>
+            <h1 data-aos="fade-left" data-aos-duration="1500">Led Industrie Madagascar</h1>
+            <h2 data-aos="fade-right" data-aos-duration="1500">Éclairons votre monde avec l'innovation LED</h2>
             <a href="#why-us" class="btn-get-started scrollto">En savoir plus</a>
         </div>
     </section><!-- End Hero -->
@@ -75,7 +76,7 @@
     <main id="main">
 
         <!-- ======= Why Us Section ======= -->
-        <section id="why-us" class="why-us">
+        <section id="why-us" class="why-us" data-aos="fade-up" data-aos-duration="1500">
             <div class="container">
 
                 <div class="row">
@@ -128,7 +129,7 @@
         </section><!-- End Why Us Section -->
 
         <section id="produits"> <!-- Section Produits -->
-            <div class="container" data-aos="fade-up">
+            <div class="container" data-aos="fade-up" data-aos-duration="1500">
                 <header class="section-header text-center">
                     <h2>Nos produits LED sont fabriqués selon les normes </h2>
                     <p>les plus élevées de qualité et de fiabilité.</p>
@@ -313,7 +314,8 @@
             <div id="particles-js"></div>
             <div class="container">
                 <div class="section-title">
-                    <h2>Foire Aux Questions <span style="font-size: 65px;margin-top: -20px;position: absolute;">?</span></h2>
+                    <h2>Foire Aux Questions <span style="font-size: 65px;margin-top: -20px;position: absolute;">?</span>
+                    </h2>
                     <p>Nous sommes engagés à vous fournir les meilleures solutions d'éclairage LED et un service client
                         exceptionnel. Pour vous aider à trouver rapidement des réponses à vos questions, nous avons
                         rassemblé ici les questions les plus fréquentes sur nos produits et services. </p>
@@ -397,8 +399,8 @@
         <section id="contact">
             <div class="container">
                 <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Votre avis nous intéresse ! Chez Led Industrie, nous nous efforçons de fournir des produits et
+                    <h2 data-aos="fade-left" data-aos-duration="1500">Contact</h2>
+                    <p data-aos="fade-right" data-aos-duration="1500">Votre avis nous intéresse ! Chez Led Industrie, nous nous efforçons de fournir des produits et
                         services de haute qualité. Vos retours nous aident à nous améliorer continuellement. Partagez
                         votre expérience avec nous et aidez-nous à mieux répondre à vos attentes. Si vous avez un
                         message urgent ou une demande spéciale, n'hésitez pas à nous contacter dès maintenant.</p>
@@ -407,8 +409,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 shadow-box">
-                        <br> <br>
-                        <form>
+                        <br>
+                        <form> 
+                            <div class="text-center">
+                                <span style="color: #FFD700; font-size: 20px;">&#9733;</span>
+                                <span style="color: #FFD700; font-size: 30px;">&#9733;</span>
+                                <span style="color: #FFD700; font-size: 20px;">&#9733;</span>
+                            </div>
                             <h3 class="text-center">Laissez-nous votre avis:</h3>
                             <div class="row">
                                 <div class="col-md-6 form-group">
@@ -478,11 +485,11 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Autres Liens</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Acceuil</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">A propos</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Produits</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Acceuil</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#why-us">A propos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#produits">Produits</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#faq">FAQ</a></li>
                         </ul>
                     </div>
 
@@ -572,6 +579,10 @@
         });
     </script>
     <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
