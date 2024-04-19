@@ -196,7 +196,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background: linear-gradient(to right, #FD7E14, #FFD700);
   border-radius: 5px;
 }
 
