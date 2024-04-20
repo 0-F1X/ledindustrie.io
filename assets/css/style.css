@@ -27,14 +27,14 @@ a:hover {
   z-index: 9999;
   overflow: hidden;
   background: #fff;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #preloader i {
   font-size: 3rem;
-  color: #FD7E14; 
+  color: #FD7E14;
 }
 
 #preloader:before {
@@ -58,7 +58,7 @@ a:hover {
   100% {
     transform: rotate(360deg);
   }
-} 
+}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -214,7 +214,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1977cc;
+  background: rgb(72, 70, 70);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -227,10 +227,7 @@ a:hover {
   line-height: 0;
 }
 
-.back-to-top:hover {
-  background: #298ce5;
-  color: #fff;
-}
+
 
 .back-to-top.active {
   visibility: visible;
@@ -278,7 +275,7 @@ a:hover {
 }
 
 #topbar .social-links a {
-  color: #437099;
+  color: rgb(72, 70, 70);
   padding-left: 15px;
   display: inline-block;
   line-height: 1px;
@@ -286,7 +283,7 @@ a:hover {
 }
 
 #topbar .social-links a:hover {
-  color: #1977cc;
+  color: #FFD700;
 }
 
 #topbar .social-links a:first-child {
@@ -302,7 +299,7 @@ a:hover {
   z-index: 997;
   padding: 15px 0;
   top: 40px;
-  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+  box-shadow: 0px 2px 15px rgba(63, 89, 112, 0.1);
 }
 
 #header.header-scrolled {
@@ -388,7 +385,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
-  color: #2c4964;
+  color: rgb(72, 70, 70);
   white-space: nowrap;
   transition: 0.3s;
   border-bottom: 2px solid #fff;
@@ -406,8 +403,11 @@ a:hover {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #1977cc;
-  border-color: #1977cc;
+  background: linear-gradient(to right, #FD7E14, #FFD700);
+  -webkit-background-clip: text;
+  color: transparent;
+  border-color: #FD7E14;
+  font-weight: bolder;
 }
 
 .navbar .dropdown ul {
@@ -723,7 +723,7 @@ a:hover {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #FFD700;
+  color: #FD7E14;
 }
 
 .faq .faq-list .icon-show,
@@ -951,19 +951,19 @@ section {
   justify-content: center;
   width: 64px;
   height: 64px;
-  border: 2px solid #8dc2f1;
+  border: 2px solid #fbffff;
   border-radius: 50px;
   transition: 0.5s;
 }
 
 .about .icon-box .icon i {
-  color: #1977cc;
+  color: rgb(72, 70, 70);
   font-size: 32px;
 }
 
 .about .icon-box:hover .icon {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: rgb(72, 70, 70);
+  border-color: rgb(72, 70, 70);
 }
 
 .about .icon-box:hover .icon i {
@@ -983,7 +983,7 @@ section {
 }
 
 .about .icon-box .title a:hover {
-  color: #1977cc;
+  color: rgb(72, 70, 70);
 }
 
 .about .icon-box .description {
@@ -1059,7 +1059,7 @@ section {
   border: none;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #c74141;
+  border-left: 15px solid rgb(72, 70, 70);
   z-index: 200;
   animation: none;
   border-radius: 0;
@@ -1095,7 +1095,7 @@ section {
 .services .icon-box::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to right,#FFD700, #FD7E14);
+  background: linear-gradient(to right, #FFD700, #FD7E14);
   right: -60px;
   top: -40px;
   width: 100px;
@@ -1106,7 +1106,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: linear-gradient(to right,#FFD700, #FD7E14);
+  background: linear-gradient(to right, #FFD700, #FD7E14);
   right: 0;
   top: 0;
   width: 100%;
@@ -1122,7 +1122,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #3498db;
+  background: rgb(72, 70, 70);
   transition: all 0.3s ease-in-out;
 }
 
@@ -1158,7 +1158,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #3498db;
+  color: rgb(72, 70, 70);
 }
 
 /*--------------------------------------------------------------
@@ -1257,7 +1257,7 @@ section {
 }
 
 .why-us .content .more-btn:hover {
-  color: #1977cc;
+  color: rgb(72, 70, 70);
   background: #fff;
 }
 
@@ -1342,7 +1342,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1c84e3;
+  color: #FD7E14;
   font-size: 18px;
   line-height: 1;
 }
@@ -1366,7 +1366,8 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #1977cc;
+  color: #2b2c2d;
+  font-weight: bolder;
 }
 
 #footer .footer-newsletter {
@@ -1406,14 +1407,15 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #1977cc;
+  background: linear-gradient(to right, #FD7E14, #FFD700);
   color: #fff;
-  transition: 0.3s;
+  transition: all ease-in-out 0.3s;
   border-radius: 50px;
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #1c84e3;
+  background: linear-gradient(to right, #FFD700, #FD7E14, #FFD700);
+  transition: all ease-in-out 0.3s;
 }
 
 #footer .credits {
